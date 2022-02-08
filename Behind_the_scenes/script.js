@@ -25,3 +25,35 @@ const firstName = 'Luan' // Global Scope
 
 
 // HOISTING
+// console.log(me) // undefined 
+// console.log(job) // error
+// console.log(year) // error
+
+//Variáveis
+var me = 'Luan';
+let job = 'Developer';
+const year = '1994';
+
+//Functions
+// console.log(addDecl(2, 3))
+// console.log(addExp(2, 3))
+// console.log(addArrow(2, 3))
+
+function addDecl(a, b) {
+  return a + b;
+}
+
+var addExp = function(a,b) {
+  return a + b;
+}
+
+var addArrow = (a, b) => a + b;
+
+//Error Example
+if(!numProducts) deleteShoppingCart();
+//undefined é um valor true
+var numProducts = 10;
+
+function deleteShoppingCart() {
+  console.log('All products deleted!');
+}
