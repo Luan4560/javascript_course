@@ -7,23 +7,20 @@
 // Como converter para formato militar ?
 
 const timeConversion = (str) => {
-  // Separar string 
-    const parseToArray = str.split('')
-    console.log(parseToArray)
+  // Transformar array em numero
+  const strToNumber = str.split('').filter(e => e !== 'A, M')
+  console.log(strToNumber)
 
-    // Verificar se é AM ou PM
-    parseToArray.map(item => {
-      if(item === 'P') {
-        console.log('Tarde')
-      } else if( item === 'A') {
-        console.log('Manhã')
-      }
-    })
+  // Verificar am ou pm
 
-  // Converter o valor para o formato 24horas
-
+  // Somar ou diminuir 12 dependendo do formato
+    
   // Retornar na função 
 
 }
 
-console.log(timeConversion('07:05:45PM'))
+console.log(timeConversion('07:05:45AM'))
+
+function teste() {
+  console.log('Teste')
+}
